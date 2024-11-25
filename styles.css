@@ -200,76 +200,87 @@
   
   @media only screen and (min-width: 600px) {
     #nav-bar {
-      flex-direction: row;
+        flex-direction: row;
     }
-  }
-  
-  @media only screen and (450px < width < 600px) {
+}
+
+@media only screen and (min-width: 450px) and (max-width: 600px) {
     .card {
-      font-size: 0.85rem;
+        font-size: 0.85rem;
     }
     .product-image {
-      height: 400px;
+        height: 400px;
     }
-  }
-  @media only screen and (450px <= width) {
+}
+
+@media only screen and (min-width: 450px) {
     .card {
-      display: flex;
-      max-width: 525px;
+        display: flex;
+        max-width: 525px;
     }
     .inner-card {
-      width: 300px;
-      padding: 20px;
+        width: 300px;
+        padding: 20px;
     }
     .product-image {
-      width: 400px;
-      border-radius: 10px 0 0 10px;
+        width: 400px;
+        border-radius: 10px 0 0 10px;
     }
-  }
-  
-  @media only screen and (width >= 1000px) {
+}
+
+@media only screen and (min-width: 1000px) {
     #video {
-      width: 70%;
+        width: 70%;
     }
     .product-cards {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
-  }
+}
 
-  #footer {
-    background-color: #fffefe; 
-    color: #000000;
-    text-align: center; 
-    padding: 20px 0; 
-    position: relative;
-    bottom: 0;
-    width: 100%; 
-  }
-  
-  .footer-content {
-    max-width: 1200px; 
-    margin: 0 auto; 
-    padding: 0 20px; 
-  }
-  
-  .footer-links {
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
-  }
-  
-  .footer-links li {
-    display: inline; 
-    margin: 0 15px; 
-  }
-  
-  .footer-links a {
-    color: #000000; 
-    text-decoration: none;
-  }
-  
-  .footer-links a:hover {
-    text-decoration: underline; 
-  }
+#footer {
+  background-color: #fffefe; 
+  color: #000000;
+  padding: 20px 0; 
+  position: relative;
+  bottom: 0;
+  width: 100%; 
+  display: flex; 
+  flex-direction: column; 
+}
+
+.footer-content {
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-end; 
+}
+
+.footer-links {
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  display: flex; 
+}
+
+.footer-links li {
+  margin: 0 15px; 
+}
+
+.footer-links a {
+  color: #000000; 
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline; 
+}
+
+.copyright {
+  text-align: right; 
+  padding-top: 10px;
+  margin-top: 20px; 
+}
