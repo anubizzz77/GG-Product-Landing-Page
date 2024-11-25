@@ -92,22 +92,26 @@
   
   .icon {
     color: var(--green);
-    margin-right: 30px;
+    margin-right: 15px;
   }
   
   #features {
-    text-align: left;
-    max-width: 800px;
-    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; 
+    max-width: 800px; 
+    margin: auto; 
+    text-align: left; 
   }
   
   .feature {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    font-family: "montserrat";
+    display: flex; 
+    align-items: center; 
+    padding: 20px; 
   }
+  
+ 
+  
   
   #video {
     width: 100%;
