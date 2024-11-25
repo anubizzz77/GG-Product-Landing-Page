@@ -237,3 +237,39 @@
       flex-wrap: wrap;
     }
   }
+
+  #footer {
+    background-color: #fffefe; /* Color de fondo */
+    color: #000000; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    padding: 20px 0; /* Espaciado arriba y abajo */
+    position: relative; /* Posicionamiento relativo */
+    bottom: 0; /* Coloca el footer al final */
+    width: 100%; /* Ancho completo */
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar contenido */
+    padding: 0 20px; /* Espaciado lateral */
+  }
+  
+  .footer-links {
+    list-style: none; /* Eliminar viñetas de la lista */
+    padding: 0; /* Eliminar padding */
+    margin: 0; /* Eliminar margin */
+  }
+  
+  .footer-links li {
+    display: inline; /* Mostrar elementos en línea */
+    margin: 0 15px; /* Espaciado lateral entre enlaces */
+  }
+  
+  .footer-links a {
+    color: #000000; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+  }
