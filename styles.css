@@ -93,32 +93,31 @@ h2 {
 
 .icon {
   color: var(--green);
-  /* Color del icono */
   margin-right: 15px;
-  /* Espacio entre el icono y el texto */
+ 
 }
 
 #features {
   display: grid;
   grid-template-columns: 1fr;
-  /* Una sola columna */
+ 
   gap: 20px;
-  /* Espacio entre los elementos de la cuadrícula */
+ 
   max-width: 800px;
-  /* Ancho máximo de la sección */
+ 
   margin: auto;
-  /* Centra la sección */
+ 
   padding: 20px;
-  /* Espaciado interno */
+ 
 }
 
 .feature {
   padding: 20px;
-  /* Espaciado interno */
+ 
   display: flex;
-  /* Utiliza flexbox para alinear el icono y el texto */
+
   align-items: center;
-  /* Centra verticalmente */
+
 }
 
 
@@ -220,6 +219,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  flex-direction: row;
 }
 
 .card {
@@ -255,6 +255,7 @@ h2 {
   .card {
     display: flex;
     max-width: 300px;
+    flex: 1
   }
 
 
