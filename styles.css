@@ -274,6 +274,34 @@ h2 {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .product-cards {
+    display: flex;
+    min-height: 600px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .add {
+    display: flex;
+    min-height: 600px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .flex {
+    display: flex;
+    min-height: 600px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
 #footer {
   background-color: #fffefe;
   color: #000000;
