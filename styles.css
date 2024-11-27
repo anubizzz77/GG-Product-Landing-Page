@@ -23,7 +23,7 @@ body {
 
 #nav-bar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Mantiene la dirección en fila en pantallas grandes */
   justify-content: space-around;
   align-items: center;
   position: fixed;
@@ -31,10 +31,11 @@ body {
   top: 0;
   background-color: var(--white);
   padding: 10px;
+  z-index: 1000; /* Asegúrate de que el nav-bar esté por encima de otros elementos */
 }
 
 .nav-links {
-  display: flex;
+  display: flex; /* Muestra los enlaces en fila por defecto */
   list-style: none;
 }
 
@@ -99,14 +100,14 @@ h2 {
 
 #features {
   display: grid;
-  grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+  grid-template-columns: 1fr;
   gap: 20px;
   max-width: 800px;
   margin: auto;
   padding: 20px;
 }
 
-/* Asegúrate de que la propiedad display esté correctamente terminada */
+
 .feature {
   padding: 20px;
   display: flex;
@@ -295,19 +296,25 @@ h2 {
   #nav-bar {
     flex-direction: column; 
     align-items: center; 
+    padding: 20px; 
   }
 
   .nav-links {
-    display: flex; 
     flex-direction: column; 
     align-items: center; 
     padding: 0; 
-    margin-top: 10px; 
+    margin-top: 10px;
   }
 
-  .nav-link {
-    margin: 5px 0; 
+  .nav-links a {
+    padding: 10px 0;
   }
+}
+
+@media (max-width: 603px) {
+#email-section {
+  margin-top: 50px;
+}
 }
 
 #footer {
